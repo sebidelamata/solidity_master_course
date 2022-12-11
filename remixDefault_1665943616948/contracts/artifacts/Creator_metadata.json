@@ -1,0 +1,90 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "deployA",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "deployedA",
+				"outputs": [
+					{
+						"internalType": "contract A",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "ownerCreator",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/deploy_auction.sol": "Creator"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/deploy_auction.sol": {
+			"keccak256": "0x38a85c8ac2f9fe3c63cd967aebe9b279eb8a924a92e9b6bda6052ee9d642b99e",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://61ead8caa8dbc519d9fd304da50f1bf28821401d0b9ea301893268afb7be8bbf",
+				"dweb:/ipfs/QmRUxjxbrvtthMxVsbrYdYfWJesujB8CsyuxGmEDJdSevf"
+			]
+		}
+	},
+	"version": 1
+}

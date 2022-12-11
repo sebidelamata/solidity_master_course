@@ -1,0 +1,333 @@
+{
+	"id": "2168c427a51a3f5577261b663ed1c90f",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.17",
+	"solcLongVersion": "0.8.17+commit.8df45f5f",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/crowdfunding.sol": {
+				"content": "//SPDX-License-Identifier: GPL-3.0\r\n\r\npragma solidity >=0.6.0 <0.9.0;\r\n\r\ncontract CrowdFunding{}\r\n"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"contracts/crowdfunding.sol": {
+				"CrowdFunding": {
+					"abi": [],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "    /* \"contracts/crowdfunding.sol\":73:96  contract CrowdFunding{} */\n  mstore(0x40, 0x80)\n  callvalue\n  dup1\n  iszero\n  tag_1\n  jumpi\n  0x00\n  dup1\n  revert\ntag_1:\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"contracts/crowdfunding.sol\":73:96  contract CrowdFunding{} */\n      mstore(0x40, 0x80)\n      0x00\n      dup1\n      revert\n\n    auxdata: 0xa2646970667358221220172eab4e1693b15dd75ca506bee5589265c67d82f66133678ebf8e4f09ed936164736f6c63430008110033\n}\n",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220172eab4e1693b15dd75ca506bee5589265c67d82f66133678ebf8e4f09ed936164736f6c63430008110033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3F DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 OR 0x2E 0xAB 0x4E AND SWAP4 0xB1 0x5D 0xD7 0x5C 0xA5 MOD 0xBE 0xE5 PC SWAP3 PUSH6 0xC67D82F66133 PUSH8 0x8EBF8E4F09ED9361 PUSH5 0x736F6C6343 STOP ADDMOD GT STOP CALLER ",
+							"sourceMap": "73:23:0:-:0;;;;;;;;;;;;;;;;;;;"
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "6080604052600080fdfea2646970667358221220172eab4e1693b15dd75ca506bee5589265c67d82f66133678ebf8e4f09ed936164736f6c63430008110033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 OR 0x2E 0xAB 0x4E AND SWAP4 0xB1 0x5D 0xD7 0x5C 0xA5 MOD 0xBE 0xE5 PC SWAP3 PUSH6 0xC67D82F66133 PUSH8 0x8EBF8E4F09ED9361 PUSH5 0x736F6C6343 STOP ADDMOD GT STOP CALLER ",
+							"sourceMap": "73:23:0:-:0;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12600",
+								"executionCost": "66",
+								"totalCost": "12666"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 73,
+									"end": 96,
+									"name": "PUSH",
+									"source": 0,
+									"value": "80"
+								},
+								{
+									"begin": 73,
+									"end": 96,
+									"name": "PUSH",
+									"source": 0,
+									"value": "40"
+								},
+								{
+									"begin": 73,
+									"end": 96,
+									"name": "MSTORE",
+									"source": 0
+								},
+								{
+									"begin": 73,
+									"end": 96,
+									"name": "CALLVALUE",
+									"source": 0
+								},
+								{
+									"begin": 73,
+									"end": 96,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 73,
+									"end": 96,
+									"name": "ISZERO",
+									"source": 0
+								},
+								{
+									"begin": 73,
+									"end": 96,
+									"name": "PUSH [tag]",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 73,
+									"end": 96,
+									"name": "JUMPI",
+									"source": 0
+								},
+								{
+									"begin": 73,
+									"end": 96,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 73,
+									"end": 96,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 73,
+									"end": 96,
+									"name": "REVERT",
+									"source": 0
+								},
+								{
+									"begin": 73,
+									"end": 96,
+									"name": "tag",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 73,
+									"end": 96,
+									"name": "JUMPDEST",
+									"source": 0
+								},
+								{
+									"begin": 73,
+									"end": 96,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 73,
+									"end": 96,
+									"name": "PUSH #[$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 73,
+									"end": 96,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 73,
+									"end": 96,
+									"name": "PUSH [$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 73,
+									"end": 96,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 73,
+									"end": 96,
+									"name": "CODECOPY",
+									"source": 0
+								},
+								{
+									"begin": 73,
+									"end": 96,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 73,
+									"end": 96,
+									"name": "RETURN",
+									"source": 0
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a2646970667358221220172eab4e1693b15dd75ca506bee5589265c67d82f66133678ebf8e4f09ed936164736f6c63430008110033",
+									".code": [
+										{
+											"begin": 73,
+											"end": 96,
+											"name": "PUSH",
+											"source": 0,
+											"value": "80"
+										},
+										{
+											"begin": 73,
+											"end": 96,
+											"name": "PUSH",
+											"source": 0,
+											"value": "40"
+										},
+										{
+											"begin": 73,
+											"end": 96,
+											"name": "MSTORE",
+											"source": 0
+										},
+										{
+											"begin": 73,
+											"end": 96,
+											"name": "PUSH",
+											"source": 0,
+											"value": "0"
+										},
+										{
+											"begin": 73,
+											"end": 96,
+											"name": "DUP1",
+											"source": 0
+										},
+										{
+											"begin": 73,
+											"end": 96,
+											"name": "REVERT",
+											"source": 0
+										}
+									]
+								}
+							},
+							"sourceList": [
+								"contracts/crowdfunding.sol",
+								"#utility.yul"
+							]
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/crowdfunding.sol\":\"CrowdFunding\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/crowdfunding.sol\":{\"keccak256\":\"0x822e095e131dc4273cf3a5f14ccc07b823eae2ecc88ffeb70e982badb23ea3bb\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://cee2ecbe2a5643aaa8384893869abe560ca4a56ffed063d092487185c9b49b01\",\"dweb:/ipfs/QmVk641jYHoxiJFiEdGRBo7BEXsb1qwMJWLqTpMBZ4kgjc\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				}
+			}
+		},
+		"sources": {
+			"contracts/crowdfunding.sol": {
+				"ast": {
+					"absolutePath": "contracts/crowdfunding.sol",
+					"exportedSymbols": {
+						"CrowdFunding": [
+							2
+						]
+					},
+					"id": 3,
+					"license": "GPL-3.0",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								">=",
+								"0.6",
+								".0",
+								"<",
+								"0.9",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "38:31:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"canonicalName": "CrowdFunding",
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"fullyImplemented": true,
+							"id": 2,
+							"linearizedBaseContracts": [
+								2
+							],
+							"name": "CrowdFunding",
+							"nameLocation": "82:12:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [],
+							"scope": 3,
+							"src": "73:23:0",
+							"usedErrors": []
+						}
+					],
+					"src": "38:60:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

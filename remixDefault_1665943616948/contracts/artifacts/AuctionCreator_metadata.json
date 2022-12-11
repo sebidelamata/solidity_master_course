@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "auctions",
+				"outputs": [
+					{
+						"internalType": "contract Auction",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "createAuction",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/auction1.sol": "AuctionCreator"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/auction1.sol": {
+			"keccak256": "0x8bde9f8dccedafb1a0f665449223c7fa65216101e2fdae30c73ef67ebb607ef6",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://77c6c659065855605345a1a5620666bd58ee53c7f966a91bc4b456724e3ebd08",
+				"dweb:/ipfs/Qme6uwQW4294bo3SPAuUZQKNYMqSKYmBPsuJTNBHKMT27g"
+			]
+		}
+	},
+	"version": 1
+}
